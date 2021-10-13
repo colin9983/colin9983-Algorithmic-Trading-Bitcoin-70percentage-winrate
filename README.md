@@ -13,23 +13,6 @@ This algorithmic trading strategy is based on capturing the five most recent K-l
 Entry point:Buy if the current price is below the last five K-lines, short if the current price is higher than the high of the last five k-lines.
 Stop loss:1.5%
 
-# Requirements
-Libraries:
-numpy /n
-pandas /n
-pandas_datareader /n
-datetime /n
-matplotlib.pyplot /n
-seaborn /n
-ta /n
-time /n
-pytz /n
-datetime /n
-requests /n
-binance_f /n
-json /n
-
-
 
 
 
