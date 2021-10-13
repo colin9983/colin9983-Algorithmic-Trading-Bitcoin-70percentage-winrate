@@ -73,11 +73,12 @@ for i in range(5):
 	cf = json.loads(cf)
 	print(cf)
 	cfd.append(cf)
+	
 cfd = pd.DataFrame.from_dict(cfd)
 cfd = cfd.iloc[:,[0,1,2,3,4]]
 cfd.columns = ['Date','Open','High','Low','Close']
 cfd.iloc[:,0] = cfd.iloc[:,0].apply(lambda x: pd.to_datetime(x, unit='ms').to_datetime64())
-zz = 0
+
 dff = pd.DataFrame(cfd)
 dff.Open = dff.Open.apply(lambda x: float(x))
 dff.High = dff.High.apply(lambda x: float(x))
@@ -87,6 +88,8 @@ dff['EMA'] = ta.trend.ema_indicator(dff.Close, window=200)
 dff['MACD'] = ta.trend.macd_diff(dff.Close, window_slow = 26, window_fast= 12, window_sign = 9)
 dff['PSAR'] = ta.trend.PSARIndicator(high= dff.High, low= dff.Low, close = dff.Close).psar()
 dff = dff.loc[:,['Open','High','Low','Close','EMA','MACD','PSAR']]
+
+work = 0
 ready_sig_buy = 0
 sig = []
 entry_price = 0
@@ -96,9 +99,9 @@ stop_profit_short = 0
 idd = 0
 ready_sig_short = 0
 stop_loss_short = 0
-proft = []
 sta = 0
-while zz == 0:
+
+while work == 0:
             time.sleep(10)
             try:
                 position_status = request_client.get_position()
