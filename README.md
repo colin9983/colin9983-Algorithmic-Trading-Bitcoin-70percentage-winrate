@@ -1,5 +1,8 @@
 # colin9983-Algorithmic-Trading-Bitcoin-70percentage-winrate
-This project is an algorithmic trade with high returns and a high win rate. Users need to have an account through the Binance exchange and access to the API
+This project is an algorithmic trade with high returns and a high win rate. Users need to have an account through the Binance exchange and access to the API.
+
+# How to use
+Just paste your api and sercret key!
 
 # Backtesting returns
 The average win rate in the backtesting is 71% in past six months, meaning that 71 out of 100 trades will result in a positive return. The rate of return for a month is 17%! It also has a much higher Sharpe rate than the S&P500.
