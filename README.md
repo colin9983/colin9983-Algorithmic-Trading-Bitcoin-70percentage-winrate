@@ -15,19 +15,19 @@ Stop loss:1.5%
 
 # Requirements
 Libraries:
-numpy
-pandas
-pandas_datareader
-datetime
-matplotlib.pyplot
-seaborn
-ta
-time
-pytz
-datetime
-requests
-binance_f
-json
+numpy /n
+pandas /n
+pandas_datareader /n
+datetime /n
+matplotlib.pyplot /n
+seaborn /n
+ta /n
+time /n
+pytz /n
+datetime /n
+requests /n
+binance_f /n
+json /n
 
 
 
